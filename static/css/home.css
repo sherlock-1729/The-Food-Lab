@@ -1,27 +1,157 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fontin Sans CR';
+    list-style: none;
+}
+
+:root{
+    --bg-color: #f0e7fd;
+    --main-color:#25064d;
+    --var-color:#FF3864;
 }
 
 body{
-    background-color: #f0e7fd !important;
+    background: var(--bg-color);
+    color: #25064d;
+}
+
+header{
+    background-color: var(--main-color) !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
 }
 
 .logo{
-    height: 300px;
-    margin-left: 40px;
+    height: 100px;
 }
 
-.nav-link{
-    font-family: 'Fontin Sans CR';
-    color: #25064d !important;
-    font-size: 20px;
-    margin: 5px;
+.logo-name{
+    color: var(--bg-color);
+    display: inline;
+    float: right;
+    margin-top: 40px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 1.1rem;
     font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all 0.5s ease;
 }
 
-.navbar-toggler{
-    color: transparent !important;
-    border: none !important;
-    border-color: transparent !important;
+.navbar a:hover{
+    color: var(--var-color);
 }
+
+.navbar a.active {
+    color: var(--var-color);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.main a{
+    margin-right: 30px;
+    margin-left: 10px;
+    color: var(--bg-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user i{
+    margin-right: 7px;
+    font-size: 28px;
+}
+
+.main a:hover{
+    color: var(--var-color);
+}
+
+#toggle-bar{
+    font-size: 35px;
+    color: var(--bg-color);
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+@media(max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a{
+        padding: 5px 0;
+        margin: 0 20px;
+    }
+}
+
+@media(max-width: 1090px){
+    #toggle-bar{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--var-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 0 0 20px 20px;
+        transition: all .5s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0 25px;
+        transition: all .5s ease;
+    }
+
+    .navbar a:hover{
+        color: var(--main-color);
+        transform: translateY(5px);
+    }
+
+    .navbar a.active{
+        color: var(--main-color);
+    }
+
+    .navbar.open{
+        right: 2%;
+    }
+}
+
+
