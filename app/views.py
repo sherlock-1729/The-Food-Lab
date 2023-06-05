@@ -4,15 +4,13 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'home.html')
 
-def brand(request):
-    return render(request, 'brand.html')
+def gallery(request):
+    return render(request, 'gallery.html')
 
 def contact(request):
     return render(request, 'contact.html')
 
-def login(request):
-    return render(request, 'login.html')
+def product(request):
+    return render(request, 'product.html')
 
-def register(request):
-    return render(request, 'register.html')
 

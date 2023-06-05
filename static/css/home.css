@@ -13,7 +13,7 @@
 }
 
 body{
-    background: var(--bg-color);
+    background: #fff;
     color: #25064d;
 }
 
@@ -36,13 +36,6 @@ header{
     height: 100px;
 }
 
-.logo-name{
-    color: var(--bg-color);
-    display: inline;
-    float: right;
-    margin-top: 40px;
-}
-
 .navbar{
     display: flex;
 }
@@ -61,25 +54,10 @@ header{
     color: var(--var-color);
 }
 
-.navbar a.active {
-    color: var(--var-color);
+.navbar a:is(:link, :active, :visited).active {
+    color:var(--var-color);
+    background-color: #FF3864;
 }
-
-.main{
-    display: flex;
-    align-items: center;
-}
-
-.main a{
-    margin-right: 30px;
-    margin-left: 10px;
-    color: var(--bg-color);
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: all .50s ease;
-    text-decoration: none;
-}
-
 .user{
     display: flex;
     align-items: center;
@@ -88,10 +66,6 @@ header{
 .user i{
     margin-right: 7px;
     font-size: 28px;
-}
-
-.main a:hover{
-    color: var(--var-color);
 }
 
 #toggle-bar{
@@ -145,13 +119,10 @@ header{
         transform: translateY(5px);
     }
 
-    .navbar a.active{
-        color: var(--main-color);
-    }
-
     .navbar.open{
         right: 2%;
     }
+
 }
 
 

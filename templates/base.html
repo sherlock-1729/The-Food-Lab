@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> {% block title %} {% endblock title %} </title>
+    <title> {% block title %} {% endblock title %} The Food Lab  </title>
     <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="../static/font/font.css">
     <link rel="stylesheet" href="../static/css/home.css">
@@ -17,24 +17,23 @@
     <header>
         <div class="top">
             <img class="logo" src="../static/images/biryani-transparent.png">
-            <h2 class="logo-name">The Food Lab</h2>
         </div>
 
         <ul class="navbar">
-            <li><a href="/" class="active">Home</a></li>
-            <li><a href="/brand">Brands</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/product">Our Products</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/brand">Contact Us</a></li>
         </ul>
 
-        <div class="main">
-            <a href="/login" class="user"><i class="fa-solid fa-user" style="color: #FF3864;"></i>Sign In</a>
-            <a href="/register">Register</a>
+        <div>
             <div class="bx bx-menu" id="toggle-bar"></i></div>
         </div>
 
     </header>
 
     <script type="text/javascript" src="../static/js/script.js"></script>
+    <script defer src="../static/js/activepage.js"></script>
 
     {% block body %} {% endblock body %}
 
