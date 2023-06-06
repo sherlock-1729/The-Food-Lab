@@ -23,20 +23,26 @@
             <li><a href="/">Home</a></li>
             <li><a href="/product">Our Products</a></li>
             <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/brand">Contact Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
         </ul>
 
         <div>
             <div class="bx bx-menu" id="toggle-bar"></i></div>
         </div>
 
+        {% block body %}
+        
+        {% endblock body %}
+
+
     </header>
 
+
+
+    <!-- js files -->
     <script type="text/javascript" src="../static/js/script.js"></script>
-    <script defer src="../static/js/activepage.js"></script>
 
-    {% block body %} {% endblock body %}
-
+    
 </body>
 
 </html>

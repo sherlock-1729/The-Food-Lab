@@ -54,10 +54,11 @@ header{
     color: var(--var-color);
 }
 
-.navbar a:is(:link, :active, :visited).active {
+.navbar .active {
     color:var(--var-color);
     background-color: #FF3864;
 }
+
 .user{
     display: flex;
     align-items: center;
