@@ -14,116 +14,16 @@
 
 body{
     background: #fff;
-    color: #25064d;
-}
-
-header{
-    background-color: var(--main-color) !important;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center ;
-    justify-content: space-between;
-    background: transparent;
-    padding: 28px 12%;
-    transition: all 0.5s ease;
 }
 
 .logo{
     height: 100px;
 }
 
-.navbar{
-    display: flex;
+.nav-link{
+    color: var(--main-color) !important;
 }
 
-.navbar a{
-    color: var(--bg-color);
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0 30px;
-    transition: all 0.5s ease;
+.dropdown-item{
+    color: var(--main-color) !important;
 }
-
-.navbar a:hover{
-    color: var(--var-color);
-}
-
-.navbar .active {
-    color:var(--var-color);
-    background-color: #FF3864;
-}
-
-.user{
-    display: flex;
-    align-items: center;
-}
-
-.user i{
-    margin-right: 7px;
-    font-size: 28px;
-}
-
-#toggle-bar{
-    font-size: 35px;
-    color: var(--bg-color);
-    cursor: pointer;
-    z-index: 1000;
-    display: none;
-}
-
-@media(max-width: 1280px){
-    header{
-        padding: 14px 2%;
-        transition: .2s;
-    }
-
-    .navbar a{
-        padding: 5px 0;
-        margin: 0 20px;
-    }
-}
-
-@media(max-width: 1090px){
-    #toggle-bar{
-        display: block;
-    }
-
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 270px;
-        height: 29vh;
-        background: var(--var-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 0 0 20px 20px;
-        transition: all .5s ease;
-    }
-
-    .navbar a{
-        display: block;
-        margin: 12px 0;
-        padding: 0 25px;
-        transition: all .5s ease;
-    }
-
-    .navbar a:hover{
-        color: var(--main-color);
-        transform: translateY(5px);
-    }
-
-    .navbar.open{
-        right: 2%;
-    }
-
-}
-
-
