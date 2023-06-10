@@ -20,10 +20,23 @@ body{
     height: 100px;
 }
 
+.navbar{
+    background-color: var(--bg-color);
+}
+
 .nav-link{
     color: var(--main-color) !important;
+    margin-left: 7px;
 }
 
 .dropdown-item{
     color: var(--main-color) !important;
+}
+
+.welcome h1,h2{
+    text-align: center;
+}
+
+.welcome h2{
+    font-family: 'Dancing Script', cursive; 
 }
