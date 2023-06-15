@@ -210,6 +210,14 @@
     justify-content: space-evenly;
 }
 
+.circle img {
+    transition: 1s ease;
+}
+
+.circle img:hover {
+    border-radius: 50%;
+    transition: .5s ease;
+}
 .landing_page .img {
     width: 31px;
     height: 31px;
